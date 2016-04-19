@@ -1,0 +1,136 @@
+<?xml version="1.0"?>
+<mysqldump xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <database name="featuredflags">
+        <table_data name="featured_flags">
+            <row>
+                <field name="id">1</field>
+                <field name="name">flag1</field>
+            </row>
+            <row>
+                <field name="id">2</field>
+                <field name="name">flag2</field>
+                <field name="status">1</field>
+            </row>
+            <row>
+                <field name="id">3</field>
+                <field name="name">flag2</field>
+                <field name="status">0</field>
+                <field name="params">{"data":"dt_false"}</field>
+            </row>
+            <row>
+                <field name="id">4</field>
+                <field name="name">flag2</field>
+                <field name="status">1</field>
+                <field name="params">{"data":"dt_true"}</field>
+            </row>
+            <row>
+                <field name="id">5</field>
+                <field name="name">flag2</field>
+                <field name="status">1</field>
+                <field name="params">{"data":"dt_true","data2":"exist"}</field>
+            </row>
+            <row>
+                <field name="id">6</field>
+                <field name="name">flagDateJanuary</field>
+                <field name="status">1</field>
+                <field name="params"></field>
+                <field name="start_date">2016-01-01 00:00:00</field>
+                <field name="end_date">2016-01-31 23:59:59</field>
+            </row>
+            <row>
+                <field name="id">7</field>
+                <field name="name">flagDateFebruary</field>
+                <field name="status">1</field>
+                <field name="params"></field>
+                <field name="start_date">2016-02-01 00:00:00</field>
+                <field name="end_date">2016-02-28 23:59:59</field>
+            </row>
+            <row>
+                <field name="id">8</field>
+                <field name="name">flagDateStartJanuary</field>
+                <field name="status">1</field>
+                <field name="params"></field>
+                <field name="start_date">2016-01-01 00:00:00</field>
+                <field name="end_date"></field>
+            </row>
+            <row>
+                <field name="id">9</field>
+                <field name="name">flagDateStartFebruary</field>
+                <field name="status">1</field>
+                <field name="params"></field>
+                <field name="start_date">2016-02-01 00:00:00</field>
+                <field name="end_date"></field>
+            </row>
+            <row>
+                <field name="id">10</field>
+                <field name="name">flagDateEndFebruary</field>
+                <field name="status">1</field>
+                <field name="params"></field>
+                <field name="start_date"></field>
+                <field name="end_date">2016-02-01 00:00:00</field>
+            </row>
+            <row>
+                <field name="id">11</field>
+                <field name="name">flagDateEndJanuary</field>
+                <field name="status">1</field>
+                <field name="params"></field>
+                <field name="start_date"></field>
+                <field name="end_date">2016-01-01 00:00:00</field>
+            </row>
+            <row>
+                <field name="id">12</field>
+                <field name="name">flagReturnParams</field>
+                <field name="status">1</field>
+                <field name="params"></field>
+                <field name="start_date"></field>
+                <field name="end_date"></field>
+                <field name="return_params">{"data":"example","data2":"example2"}</field>
+            </row>
+            <row>
+                <field name="id">13</field>
+                <field name="name">flagReturnParamsDisabled</field>
+                <field name="status">0</field>
+                <field name="params"></field>
+                <field name="start_date"></field>
+                <field name="end_date"></field>
+                <field name="return_params">{"data":"example","data2":"example2"}</field>
+            </row>
+            <row>
+                <field name="id">14</field>
+                <field name="name">flagReturnParamsJanuary</field>
+                <field name="status">1</field>
+                <field name="params"></field>
+                <field name="start_date">2016-01-01 00:00:00</field>
+                <field name="end_date">2016-01-31 23:59:59</field>
+                <field name="return_params">{"data":"example","data2":"example2"}</field>
+            </row>
+            <row>
+                <field name="id">15</field>
+                <field name="name">flagReturnParamsDateFebruary</field>
+                <field name="status">1</field>
+                <field name="params"></field>
+                <field name="start_date">2016-02-01 00:00:00</field>
+                <field name="end_date">2016-02-28 23:59:59</field>
+                <field name="return_params">{"data":"example","data2":"example2"}</field>
+            </row>
+            <row>
+                <field name="id">16</field>
+                <field name="name">flagReturnParamsWithFilter</field>
+                <field name="status">1</field>
+                <field name="params">{"data1":"dt_true","data2":"exist"}</field>
+                <field name="start_date">2016-01-01 00:00:00</field>
+                <field name="end_date">2016-01-31 23:59:59</field>
+                <field name="return_params">{"data":"example","data2":"example2"}</field>
+            </row>
+            <row>
+                <field name="id">17</field>
+                <field name="name">flagDateEndAlways</field>
+                <field name="status">1</field>
+                <field name="params"></field>
+                <field name="start_date"></field>
+                <field name="end_date">0000-00-00 00:00:00</field>
+                <field name="return_params"></field>
+            </row>
+        </table_data>
+    </database>
+</mysqldump>

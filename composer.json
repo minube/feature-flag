@@ -1,0 +1,30 @@
+{
+  "name": "minube/featured-flags",
+  "homepage": "http://minube.com",
+  "description": "Featured flag to activate functionality without release new version",
+  "keywords": [
+    "featured",
+    "flags"
+  ],
+  "type": "library",
+  "license": "Apache-2.0",
+  "authors": [
+    {
+      "name": "Minube",
+      "homepage": "http://www.minube.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "FeaturedFlags\\": "src/"
+    }
+  },
+  "require": {
+    "php": ">=5.3.3"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "4.1.*",
+    "phpunit/dbunit": ">=1.2",
+    "codacy/coverage": "dev-master"
+  }
+}
