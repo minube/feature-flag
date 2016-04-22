@@ -112,15 +112,13 @@ class FeaturedFlagsImpl implements FeaturedFlags
     private function _getCacheModel($cacheKey)
     {
         try {
-            if (!is_null($this->_redis) && $this->_redis->isConnected() && $this->_redis->get($cacheKey))
+            if (!is_null($this->_redis) && $this->_redis->get($cacheKey))
             {
                 return $this->_redis->get($cacheKey);
             }
-
-            return null;
         } catch (\Exception $exc) {
-            return null;
         }
+        return null;
     }
 
     /**
