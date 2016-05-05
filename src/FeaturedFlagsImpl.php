@@ -128,8 +128,10 @@ class FeaturedFlagsImpl implements FeaturedFlags
     private function _setCacheKey($cacheKey, FeaturedFlagsModel $featuredFlagsModel)
     {
         if (!is_null($this->_redis)) {
-            $timeOut = $this->_getTimeout($featuredFlagsModel->getEndDate());
-            $this->_redis->set($cacheKey, $featuredFlagsModel, $timeOut);
+            try {
+                $timeOut = $this->_getTimeout($featuredFlagsModel->getEndDate());
+                $this->_redis->set($cacheKey, $featuredFlagsModel, $timeOut);
+            } catch (\Exception $e){}
         }
     }
 
