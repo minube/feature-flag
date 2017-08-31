@@ -1,5 +1,5 @@
 # Featured Flags
-[![Build Status](https://travis-ci.org/minube/feature-flags.png)](https://travis-ci.org/minube/feature-flags) [![Code Coverage](https://scrutinizer-ci.com/g/minube/featured-flags/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/minube/featured-flags/?branch=master) [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/minube/featured-flags/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/minube/featured-flags/?branch=master) [![Build Status](https://scrutinizer-ci.com/g/minube/featured-flags/badges/build.png?b=master)](https://scrutinizer-ci.com/g/minube/featured-flags/build-status/master)
+[![Build Status](https://travis-ci.org/minube/featured-flags.png)](https://travis-ci.org/minube/featured-flags) [![Code Coverage](https://scrutinizer-ci.com/g/minube/featured-flags/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/minube/featured-flags/?branch=master) [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/minube/featured-flags/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/minube/featured-flags/?branch=master) [![Build Status](https://scrutinizer-ci.com/g/minube/featured-flags/badges/build.png?b=master)](https://scrutinizer-ci.com/g/minube/featured-flags/build-status/master)
 
 Featured flag to activate functionality without release new version
 
