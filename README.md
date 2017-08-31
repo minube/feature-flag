@@ -4,10 +4,10 @@
 Featured flag to activate functionality without release new version
 
 
-##How to use it
+## How to use it
 
 
-######Database Example (MySQL):
+###### Database Example (MySQL):
     CREATE TABLE IF NOT EXISTS `featured_flags` (
       `id` int(10) NOT NULL,
       `name` varchar(100) NOT NULL,
@@ -19,7 +19,7 @@ Featured flag to activate functionality without release new version
        PRIMARY KEY (`id`)
     );
 
-######Example DB Content
+###### Example DB Content
 ```php
 
 /**
@@ -45,7 +45,7 @@ $filterValuesTypeA = array('type' => 'typeA');
 $filterValuesTypeBAndColorRed = array('type' => 'typeB', 'color' => 'red');
 ```
 
-######Flag enabled without filter parameters
+###### Flag enabled without filter parameters
 ```php
 if($featuredFlags->isEnabled($flagName))
 {
@@ -54,7 +54,7 @@ if($featuredFlags->isEnabled($flagName))
 // flag1 is enabled (id:1)
 ```
 
-######Flag disabled without filter parameters
+###### Flag disabled without filter parameters
 ```php
 if($featuredFlags->isEnabled('flagDisabled'))
 {
@@ -65,7 +65,7 @@ if($featuredFlags->isEnabled('flagDisabled'))
 // flagDisabled is disabled (id:5)
 ```
 
-######Flag enabled with one filter parameter
+###### Flag enabled with one filter parameter
 ```php
 if($featuredFlags->isEnabled($flagName, $filterValuesTypeA))
 {
@@ -74,7 +74,7 @@ if($featuredFlags->isEnabled($flagName, $filterValuesTypeA))
 // flag1 with params = {"type":"typeA"} is enabled (id:2)
 ```
 
-######Flag enabled with multiple filter parameters
+###### Flag enabled with multiple filter parameters
 ```php
 if($featuredFlags->isEnabled($flagName, $filterValuesTypeBAndColorRed))
 {
@@ -83,7 +83,7 @@ if($featuredFlags->isEnabled($flagName, $filterValuesTypeBAndColorRed))
 // flag1 with params = {"type":"typeB","color":"Red"} is enabled (id:4)
 ```
 
-######Flag enabled by Date
+###### Flag enabled by Date
 ```php
 // today = '2016-01-15 00:00:00'
 if($featuredFlags->isEnabled('flagJanuary', $filterValuesTypeBAndColorRed))
@@ -93,7 +93,7 @@ if($featuredFlags->isEnabled('flagJanuary', $filterValuesTypeBAndColorRed))
 // flagJanuary is enabled only in January 2016
 ```
 
-######Flag enabled by StartDate
+###### Flag enabled by StartDate
 ```php
 // today = '2016-05-15 00:00:00'
 if($featuredFlags->isEnabled('flagSinceJanuary', $filterValuesTypeBAndColorRed))
@@ -103,7 +103,7 @@ if($featuredFlags->isEnabled('flagSinceJanuary', $filterValuesTypeBAndColorRed))
 // flagSinceJanuary is enabled after January 2016
 ```
 
-######Flag enabled by EndDate
+###### Flag enabled by EndDate
 ```php
 // today = '2016-02-15 00:00:00'
 if($featuredFlags->isEnabled('flagUntilFebruary', $filterValuesTypeBAndColorRed))
@@ -115,7 +115,7 @@ if($featuredFlags->isEnabled('flagUntilFebruary', $filterValuesTypeBAndColorRed)
 // flagUntilFebruary is disabled after February 2016
 ```
 
-######Get Flag values with without filter parameters
+###### Get Flag values with without filter parameters
 ```php
 $flagValues = $featuredFlags->getEnabledValues($flagName);
 echo('This are the flag1(id:1) values: ');
@@ -129,7 +129,7 @@ print_r($flagValues);
 */
 ```
 
-######Get Flag values from disabled flag
+###### Get Flag values from disabled flag
 ```php
 $flagValuesDisabled = $featuredFlags->getEnabledValues('flagDisabled');
 echo('The flagDisabled values are disabled: ');
@@ -140,7 +140,7 @@ print_r($flagValuesDisabled);
 */
 ```
 
-######Get Flag values from disabled flag with one filter parameter
+###### Get Flag values from disabled flag with one filter parameter
 ```php
 $flagValuesTypeA = $featuredFlags->getEnabledValues($flagName, $filterValuesTypeA);
 echo('This are the flag1(id:2) with params = {"type":"typeA"} values: ');
@@ -154,7 +154,7 @@ print_r($flagValuesTypeA);
 */
 ```
 
-######Get Flag values from disabled flag multiple filter parameters
+###### Get Flag values from disabled flag multiple filter parameters
 ```php
 $flagValuesTypeBRed = $featuredFlags->getEnabledValues($flagName, $filterValuesTypeBAndColorRed);
 echo('This are the flag1 with params = {"type":"typeB","color":"Red"} values: ');
